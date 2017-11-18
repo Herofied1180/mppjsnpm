@@ -51,7 +51,13 @@
 		gClient.on("participant added", updateCursor);
 		gClient.on("a", function(msg){
 			if (msg.a == "@info@") {
-				module.exports.chat.send('MPP.js made by: SonicCoding1180(FluffehKitteh48)')
+				module.exports.chat.send("MPP.js made by: SonicCoding1180(FluffehKitteh48)")
+			} else if (msg.a == "@help@") {
+				module.exports.chat.send("Core Commands: @info@, @help@, @invite@, @discord@, @git@, @github@");
+			} else if (msg.a == "@invite@" || msg.a == "@discord@") {
+				module.exports.chat.send("Discord Invite: discord.gg/EfUwTBn");
+			} else if (msg.a == "@git@" || msg.a == "@github@") {
+				module.exports.chat.send("MPP.js Github: https://github.com/Herofied1180/mppjsnpm")
 			}
 		});
 	})();
