@@ -32,7 +32,7 @@ MPP.client.on("a", function(msg){
 	args = args.slice(1);
   
   // Commands
-  if (cmd = p+"test"){
+  if (cmd == p+"test"){
     MPP.chat.send("Hey, we're testing here!");
   }
 }
